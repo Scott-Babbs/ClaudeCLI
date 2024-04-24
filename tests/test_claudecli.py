@@ -2,6 +2,7 @@ import pytest
 from unittest.mock import patch, MagicMock
 from ClaudeCLI.Models.claudecli import main, display_loading_indicator
 from threading import Event
+from io import StringIO
 
 def test_display_loading_indicator():
     with patch('sys.stdout', new=StringIO()) as fake_output:
