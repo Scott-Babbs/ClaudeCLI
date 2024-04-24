@@ -37,5 +37,7 @@ jobs:
         flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
     
     - name: Test claudecli.py
+      env:
+        CLAUDE_API_KEY: ${{ secrets.CLAUDE_API_KEY }}
       run: |
         python -m pytest tests/test_claudecli.py
