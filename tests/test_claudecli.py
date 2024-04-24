@@ -1,6 +1,6 @@
 import pytest
 from unittest.mock import patch, MagicMock
-from ClaudeCLI.Models.claudecli import main, display_loading_indicator
+from Models.claudecli import main, display_loading_indicator
 from threading import Event
 from io import StringIO
 
